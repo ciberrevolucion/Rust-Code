@@ -1,7 +1,7 @@
 #![cfg(test)]
 
 use problem1::{sum, dedup, filter};
-//use problem2::mat_mult;
+use problem2::mat_mult;
 //use problem3::sieve;
 //use problem4::{hanoi, Peg};
 
@@ -68,7 +68,7 @@ fn test2_filter_small() {
     assert_eq!(filter(&vs, &power_of_two), vec![2,4,64,128,16]);
 }
 
-/*
+
 //
 // Problem 2
 //
@@ -88,6 +88,7 @@ fn test_mat_mult_identity() {
     }
 }
 
+/*
 //
 // Problem 3
 //

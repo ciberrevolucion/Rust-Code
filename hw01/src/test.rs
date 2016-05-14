@@ -88,6 +88,16 @@ fn test_mat_mult_identity() {
     }
 }
 
+#[test]
+fn test_mat_mult_associative() {
+    let mat1 = vec![vec![5.;3]; 3];
+    let mat2 = vec![vec![7.;3], vec![1.;3], vec![2.;3]];
+    let mat3 = vec![vec![7.,2.,4.], vec![1.,5.,7.], vec![2.,4.,8.]];
+    let result12 = mat_mult(&mat1, &mat2);
+    let result23 = mat_mult(&mat2, &mat3);
+    assert_eq!(mat_mult(&result12, &mat3), mat_mult(&mat1, &result23));
+}
+
 /*
 //
 // Problem 3

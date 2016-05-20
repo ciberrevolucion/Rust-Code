@@ -2,7 +2,7 @@
 
 use problem1::{sum, dedup, filter};
 use problem2::mat_mult;
-//use problem3::sieve;
+use problem3::sieve;
 //use problem4::{hanoi, Peg};
 
 //
@@ -98,16 +98,17 @@ fn test_mat_mult_associative() {
     assert_eq!(mat_mult(&result12, &mat3), mat_mult(&mat1, &result23));
 }
 
-/*
+
 //
 // Problem 3
 //
 
 #[test]
 fn test_sieve_basic() {
-    assert_eq!(vec![2,3,5,7,11], sieve(12));
+    assert_eq!(vec![2,3,5,7,11], sieve(11));
 }
 
+/*
 //
 // Problem 4
 //
